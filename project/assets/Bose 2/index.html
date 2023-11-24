@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Product details page</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.nice-number.css" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <!-- product detail area start -->
+    <div class="product-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img-main-active">
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/1.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/2.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/3.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-img-mini-active">
+                        <img class="img-fluid" src="img/1.jpg" alt="">
+                        <img class="img-fluid" src="img/2.jpg" alt="">
+                        <img class="img-fluid" src="img/3.jpg" alt="">
+                        <img class="img-fluid" src="img/4.jpg" alt="">
+                        <!-- <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-box">
+                        <h2>Bose EarBuds 2</h2>
+                        <div class="star-icon">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <p>$199 <span>$299</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-spinner mt-30">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_card_icon.png" alt=""> Add to cart</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button wishlet-bg mt-30" href="#"><img class="img-fluid" src="img/product_wishlet_icon.png" alt="">Add to wishlet</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_book_icon.png" alt=""> Buy now</a>
+                            </div>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <span class="mt-30 d-inline-block">INTRODUCING QUIETCOMFORT EARBUDS II: These new wireless, bluetooth, noise cancelling earbuds from Bose weren’t designed with a one-size-fits-all approach. These next-generation wireless earbuds are engineered to fit you. They intelligently personalize the noise cancellation and sound performance to uninterrupted, immersive listening wherever you are. To ensure all-day comfort and a secure fit, they come with three pairs of ear tips and three pairs of custom stability bands, so you can find the best fit for your ears. Own your uniqueness with sound and fit shaped to you.
+BOSE World’s Best NOISE CANCELLING EARBUDS: QuietComfort Earbuds II intelligently personalize the noise cancellation and sound performance to your ears, so you can enjoy deep, immersive sound and the world’s best noise cancellation. August 2022. Conclusions derived by Bose Corp., based on ANC measurements made by Michael & Assoc., Inc. per ANSI/ASA S12.42-2010
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product detail area end -->
+    
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        
+         $('.product-img-main-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: '.product-img-mini-active',
+          arrows: true,
+          autoplaySpeed: 3000,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+        $('.product-img-mini-active').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.product-img-main-active',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+
+        // product counter start
+        $(function(){
+            $('.product-spinner input[type="number"]').niceNumber();
+         });
+
+
+    </script>
+</body>
+</html>

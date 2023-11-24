@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Product details page</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.nice-number.css" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <!-- product detail area start -->
+    <div class="product-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img-main-active">
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/1.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/2.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/3.jpg" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-img-mini-active">
+                        <img class="img-fluid" src="img/1.jpg" alt="">
+                        <img class="img-fluid" src="img/2.jpg" alt="">
+                        <img class="img-fluid" src="img/3.jpg" alt="">
+                        <img class="img-fluid" src="img/4.jpg" alt="">
+                        <!-- <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-box">
+                        <h2>Hitachi 1.5 Ton AC </h2>
+                        <div class="star-icon">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <p>$999 <span>$999</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-spinner mt-30">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_card_icon.png" alt=""> Add to cart</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button wishlet-bg mt-30" href="#"><img class="img-fluid" src="img/product_wishlet_icon.png" alt="">Add to wishlet</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_book_icon.png" alt=""> Buy now</a>
+                            </div>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <span class="mt-30 d-inline-block">Split AC with Inverter compressor: Variable speed compressor which adjusts power depending on heat load.
+This Hitachi 5 Star AC is of 1.5TR Capacity and perfect for cooling room size of 150-180 Sq.Ft. The Compressor is of inverter technology
+Energy Rating : 5 Star - Best in class efficiency | Annual Energy Consumption: 813.13 Units Per Year| ISEER Value: 5.02 The star rating is as per BEE guidelines
+Copper Condenser Coil: Better cooling and requires low maintenance / Eco Friendly gas / Manufacturer Warranty: 1 Year Comprehensive on Product |10 years on Compressor| 5 years on PCB/ Controller.
+Auto Mode, Cool Mode, Fan Mode, Dry Mode (better humidity control), LCD Remote Control, Auto Fan Speed, Auto Restart, Green Refrigerant, 43 Quality Test features are available.Super Silent fan speed & at a distance of 1 m. }
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product detail area end -->
+    
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        
+         $('.product-img-main-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: '.product-img-mini-active',
+          arrows: true,
+          autoplaySpeed: 3000,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+        $('.product-img-mini-active').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.product-img-main-active',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+
+        // product counter start
+        $(function(){
+            $('.product-spinner input[type="number"]').niceNumber();
+         });
+
+
+    </script>
+</body>
+</html>
